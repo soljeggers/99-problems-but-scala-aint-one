@@ -5,5 +5,11 @@ object ScalaProblems extends App {
     .last
   }
 
-  def secondLast(numList: List[Int]) : Int = ???
+  def secondLast(numList: List[Int]) : Int = {
+    val reverse = numList.reverse.tail
+    reverse.head
+  }
+
+
+
 }
