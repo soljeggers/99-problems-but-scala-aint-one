@@ -1,6 +1,8 @@
 object ScalaProblems extends App {
 
-  def lastOfList(numList: List[Int]) : Int = 5
+  def lastOfList(numList: List[Int]) : Int = {
+    numList.last
+  }
 
 
 }
