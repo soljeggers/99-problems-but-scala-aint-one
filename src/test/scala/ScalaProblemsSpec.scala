@@ -29,4 +29,10 @@ class ScalaProblemsSpec extends WordSpec with MustMatchers {
     }
   }
 
+  "numberOfElements" must {
+    "when provided with a list of 1 return the number of elements 1" in {
+      ScalaProblems.numberOfElements(List(1)) mustEqual 1
+    }
+  }
+
 }

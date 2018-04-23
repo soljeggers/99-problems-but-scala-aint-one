@@ -14,5 +14,9 @@ object ScalaProblems extends App {
     numList(k - 1)
   }
 
-  
+  def numberOfElements(numList: List[Int]) : Int = {
+    1
+  }
+
+
 }
