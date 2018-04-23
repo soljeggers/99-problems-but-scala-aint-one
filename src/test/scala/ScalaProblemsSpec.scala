@@ -48,5 +48,21 @@ class ScalaProblemsSpec extends WordSpec with MustMatchers {
       ScalaProblems.reverseList(List(1,1,2,3,5,8)) mustEqual List(8,5,3,2,1,1)
     }
   }
+  "palindromeList" must{
+    "when provided with a list of 1 return false" in {
+      ScalaProblems.palindromeList(List(1)) mustEqual true
+    }
+    "when provided with a list of 1,2 return false" in {
+      ScalaProblems.palindromeList(List(1,2)) mustEqual false
+    }
+    "when provided with a list of 1,2,1, return true" in {
+      ScalaProblems.palindromeList(List(1,2,3,2,1)) mustEqual true
+    }
+  }
+  "flattenList"  must {
+    "when provided with a list containing list flatten the list" in {
+      ScalaProblems.flattenList(List(List(1))) mustEqual List(1)
+    }
+  }
 
 }

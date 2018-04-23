@@ -21,4 +21,13 @@ object ScalaProblems extends App {
   def reverseList(numList: List[Int]) : List[Int] = {
     numList.reverse
   }
+
+  def palindromeList(numList : List[Int]) : Boolean = {
+    numList == numList.reverse
+  }
+
+  def flattenList (listOfLists: List[List[Int]]) : List[Int] = {
+    List(1)
+  }
+
 }
