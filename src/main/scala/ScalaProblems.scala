@@ -10,6 +10,9 @@ object ScalaProblems extends App {
     reverse.head
   }
 
+  def nthNumber(numList : List[Int], k: Int) : Int = {
+    numList(k - 1)
+  }
 
-
+  
 }
