@@ -15,8 +15,10 @@ object ScalaProblems extends App {
   }
 
   def numberOfElements(numList: List[Int]) : Int = {
-    1
+    numList.length
   }
 
-
+  def reverseList(numList: List[Int]) : List[Int] = {
+    numList.reverse
+  }
 }
